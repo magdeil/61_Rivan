@@ -8,8 +8,8 @@
     - name: Configure CISCO AP
       ios_config:
         lines:
-          - no Dot11 ssid _-wifi
-          - Dot11 ssid _-wifi
+          - no Dot11 ssid 61-wifi
+          - Dot11 ssid 61-wifi
           - authentication open
           - authentication key-management wpa
           - wpa-psk ascii C1sc0123
@@ -18,6 +18,6 @@
           - channel 9
           - no shut
           - encryption mode ciphers tkip
-          - ssid _-wifi
+          - ssid 61-wifi
       vars:
         ansible_network_os: ios
